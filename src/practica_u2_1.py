@@ -194,7 +194,7 @@ def main():
 
     while not encuentra_fin:
 
-        comando, importe = recuperar_comando_e_importe()
+        comando, importe = recuperar_comando_e_importe(linea)
 
         if comando is None or not comprobar_comando(comando):
             mostrar_mensaje_error()
