@@ -1,6 +1,6 @@
 import pytest
 
-from src.practicau2_1 import (
+from src.practica_u2_1 import (
     comprobar_importe, comprobar_comando, procesar_compra, procesar_venta,
     mostrar_saldo, resetear_saldo, recuperar_comando_e_importe, mostrar_mensaje_error
 )
@@ -38,7 +38,7 @@ def test_comprobar_comando(comando, expected):
     """
     Prueba para la función comprobar_comando.
     """
-    assert comprobar_comando(comando) == expected
+    assert comprobar_comando(comando) == "compra"
 
 
 @pytest.mark.parametrize(
